@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Listings</title>
+    <link rel="stylesheet" href="../css/apply.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <nav>
+      <h1>Hawaii Real Estate</h1>
+      <div onclick="displayNav()" class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <section class="navbar">
+      <ul class="navbar-links">
+        <li class="logo"><a href=""> logo</a></li>
+        <li><a href="../html/index.html">Home</a></li>
+        <li><a href="../html/listings.html">Listings</a></li>
+        <li><a href="../html/aboutus.html">About us</a></li>
+        <li><a href="../html/contactus.html">Contact us</a></li>
+        <li><a href="../html/testimonies.html">Testimonies</a></li>
+
+        <li>
+          <i class="material-icons" onclick="showPhone()">chat</i>
+        </li>
+      </ul>
+    </section>
+    <!-- Application Form Modal -->
+    <div id="applicationModal" class="modal">
+      <div class="modal-content">
+        <h2>Rental Application</h2>
+        <h4>This document is <b>NOT</b> a lease or rental agreement.</h4>
+        <form id="applicationForm">
+          <label for="applicantName">Your Name:</label>
+          <input type="text" id="applicantName" name="applicantName" required />
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Your Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="lease-lenght"> Lease Type/Lenght</label>
+          <select name="lease-lenght" id="lease-lenght">
+            <option selected value="0">Select your lease type</option>
+            <option value="1">Month-Month</option>
+            <option value="3">3 Months</option>
+            <option value="6">6 Months</option>
+            <option value="12">1 Year</option>
+          </select>
+
+          <label for="start-date">Start Date:</label>
+          <input type="date" id="start-date" name="start-date" required />
+
+          <p>Co-Applicant:</p>
+          <label for="co-applicant">Yes:</label>
+          <input type="radio" id="yes" name="co-applicant" value="Yes" />
+          <label for="co-applicant">No:</label>
+          <input type="radio" id="no" name="co-applicant" value="no" />
+          <p>if Yes, Describe:</p>
+          <textarea
+            name="describe-coapplcant"
+            id="describe-coapplcant"
+          ></textarea>
+
+          <label for="current-employment">Current Employment:</label>
+          <input
+            type="text"
+            id="current-employment"
+            name="current-employment"
+            required
+          />
+
+          <label for="employed-howlong">Employed for how long:</label>
+          <input
+            type="text"
+            id="employed-howlong"
+            name="employed-howlong"
+            required
+          />
+
+          <label for="employment-address">Employment Address:</label>
+          <input
+            type="text"
+            id="employment-address"
+            name="employment-address"
+            required
+          />
+
+          <label for="gross-income">Gross Income:</label>
+          <input type="number" id="gross-income" name="gross-income" required />
+
+          <label for="credit-score">Credit Score:</label>
+          <input type="number" id="credit-score" name="credit-score" required />
+
+          <label for="current-residence">Current Residence:</label>
+          <input
+            type="text"
+            id="current-residence"
+            name="current-residence"
+            required
+          />
+
+          <label for="desireformoving">Desire for Moving:</label>
+          <input
+            type="text"
+            id="desireformoving"
+            name="desireformoving"
+            required
+          />
+
+          <label for="notes">Additional Notes:</label>
+          <textarea id="notes" name="notes"></textarea>
+
+          <button type="submit">Submit Application</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="contact-us" id="contact">
+      <h2>Get Expert Guidance on Your Next Home</h2>
+      <button onclick="contactUs()">Contact Us</button>
+    </div>
+
+    <div class="footer-cut">
+      <p>&copy; 2022 Hawaii Rental Homes | All Rights Reserved</p>
+    </div>
+    <script src="../js/apply.js"></script>
+  </body>
+</html>

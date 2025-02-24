@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo.jpg" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link
+      href="css/bootstrap.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+  </head>
+
+  <body>
+    <!--Header-->
+
+    <!--navbar-->
+
+    <nav>
+      <h1>Hawaii Real Estate</h1>
+      <div onclick="displayNav()" class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <section class="navbar">
+      <ul class="navbar-links">
+        <li class="logo"><a href=""> logo</a></li>
+        <li><a href="../html/index.html">Home</a></li>
+        <li><a href="../html/listings.html">Listings</a></li>
+        <li><a href="../html/aboutus.html">About us</a></li>
+        <li><a href="../html/contactus.html">Contact us</a></li>
+        <li><a href="../html/testimonies.html">Testimonies</a></li>
+
+        <li>
+          <i class="material-icons" onclick="showPhone()">chat</i>
+        </li>
+      </ul>
+    </section>
+
+    <!-- banner -->
+
+    <!--Navbar collapse for small screens-->
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="../images/background.jpg" style="width: 100%" />
+        <div class="text">
+          <p>Find Your Perfect Rental in Paradise</p>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/background2.jpg" style="width: 100%" />
+        <div class="text">Luxury & Affordable Homes for Rent in Hawaii</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/background3.jpg" style="width: 100%" />
+        <div class="text">Enjoy the Hawaiian Lifestyle</div>
+      </div>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="location" placeholder="Enter location" />
+      <input type="text" id="price" placeholder="Price Range" />
+      <button onclick="searchListings()">Search</button>
+    </div>
+
+    <div class="featured-listings" id="listings">
+      <div
+        class="listing"
+        style="
+          background-image: url(../images/kihei1/1.jpg);
+          background-size: cover;
+        "
+      >
+        <h3>Light Steps to Sandy Beach</h3>
+        <p>$2,500/month | 2 Bed | 1 Bath | Kihei, HI</p>
+      </div>
+      <div
+        class="listing"
+        style="
+          background-image: url(../images/koloa/1.jpg);
+          background-size: cover;
+        "
+      >
+        <h3>Ocean View First Floor</h3>
+        <p>$2,100/month | 1 Bed | 1 Bath | Koloa, HI</p>
+      </div>
+      <div
+        class="listing"
+        style="
+          background-image: url(../images/Hana1/4.jpg);
+          background-size: cover;
+        "
+      >
+        <h3>Hana Evergreen Cottage</h3>
+        <p>$3,800/month | 1 Bed | 1 Bath | Hana, HI</p>
+      </div>
+    </div>
+    <div class="cta" id="contact">
+      <h2>Get Expert Guidance on Your Next Home</h2>
+      <button onclick="contactUs()">Contact Us</button>
+    </div>
+    <div class="footer">
+      <p>&copy; 2022 Hawaii Rental Homes | All Rights Reserved</p>
+    </div>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

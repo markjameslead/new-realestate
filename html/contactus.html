@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rental Listings - Hawaii</title>
+    <link rel="stylesheet" href="../css/contactus.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <nav>
+      <h1>Hawaii Real Estate</h1>
+      <div onclick="displayNav()" class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <section class="navbar">
+      <ul class="navbar-links">
+        <li class="logo"><a href=""> logo</a></li>
+        <li><a href="../html/index.html">Home</a></li>
+        <li><a href="../html/listings.html">Listings</a></li>
+        <li><a href="../html/aboutus.html">About us</a></li>
+        <li><a href="../html/contactus.html">Contact us</a></li>
+        <li><a href="../html/testimonies.html">Testimonies</a></li>
+
+        <li>
+          <i class="material-icons" onclick="showPhone()">chat</i>
+        </li>
+      </ul>
+    </section>
+
+    <div class="container">
+      <h1>Contact Us</h1>
+      <div class="contact-info">
+        <p>Email: hawaiicoastalhomes@outlook.com</p>
+        <p>Phone: 808.731.8154</p>
+        <p>Address: 1234 Hawaii St, Honolulu, HI</p>
+      </div>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button onclick="contactus()" type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="footer-cut">
+      <p>&copy; 2022 Hawaii Rental Homes | All Rights Reserved</p>
+    </div>
+
+    <script src="../js/contactus.js"></script>
+  </body>
+</html>
