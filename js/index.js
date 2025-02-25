@@ -19,10 +19,11 @@ function showSlides() {
   dots[slideIndex - 1].className += ' active'
   setTimeout(showSlides, 2000) // Change image every 2 seconds
 }
-function searchListings() {
+/*function searchListings() {
   let location = document.getElementById('location').value.toLowerCase()
   let price = document.getElementById('price').value.toLowerCase()
   let listings = document.querySelectorAll('.listing')
+  console.log(price, listings)
 
   listings.forEach((listing) => {
     let text = listing.textContent.toLowerCase()
@@ -32,6 +33,16 @@ function searchListings() {
       listing.style.display = 'none'
     }
   })
+}*/
+
+function redirectToListings() {
+  let location = document.getElementById('location').value
+  let price = document.getElementById('price').value
+
+  // Redirect to listings.html with search parameters
+  window.location.href = `listings.html?location=${encodeURIComponent(
+    location
+  )}&price=${encodeURIComponent(price)}`
 }
 
 function contactUs() {
