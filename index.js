@@ -46,7 +46,7 @@ function redirectToListings() {
 }
 
 function contactUs() {
-  window.open('contactus.html')
+  window.open('../html/contactus.html')
 }
 const hamMenu = document.querySelector('.ham-menu')
 hamMenu.addEventListener('click', () => {
