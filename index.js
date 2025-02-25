@@ -40,7 +40,7 @@ function redirectToListings() {
   let price = document.getElementById('price').value
 
   // Redirect to listings.html with search parameters
-  window.location.href = `listings.html?location=${encodeURIComponent(
+  window.location.href = `../html/listings.html?location=${encodeURIComponent(
     location
   )}&price=${encodeURIComponent(price)}`
 }
