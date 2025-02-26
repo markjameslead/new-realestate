@@ -1,18 +1,9 @@
-applicationForm.addEventListener('submit', function (event) {
-  alert('Application submitted!')
-  applicationForm.reset()
-})
-
-function contactUs() {
-  window.open('contactus.html')
-}
+ishowing = false
 
 const hamMenu = document.querySelector('.ham-menu')
 hamMenu.addEventListener('click', () => {
   hamMenu.classList.toggle('active')
 })
-
-ishowing = false
 
 function displayNav() {
   if (ishowing === false) {
@@ -26,6 +17,15 @@ function displayNav() {
 
     ishowing = false
   }
+}
+
+applicationForm.addEventListener('submit', function (event) {
+  alert('Application submitted!')
+  applicationForm.reset()
+})
+
+function contactUs() {
+  window.open('../html/contactus.html')
 }
 
 function showPhone(params) {

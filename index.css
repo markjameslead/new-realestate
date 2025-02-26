@@ -158,7 +158,7 @@ body {
     height: 450px !important;
   }
   h1 {
-    font-size: 1.6rem !important;
+    font-size: 2rem !important;
     margin-top: 10px;
     margin: 10px;
   }
@@ -183,7 +183,7 @@ img {
 }
 h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   position: fixed;
   width: 100%;
   height: 50px;
@@ -193,7 +193,7 @@ h1 {
   display: flex;
   width: 100%;
   border: none;
-  padding-top: 100px;
+  padding-top: 120px;
   z-index: 900;
 }
 
@@ -280,7 +280,7 @@ img {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding: 8px 12px;
   position: absolute;
   top: 200px;

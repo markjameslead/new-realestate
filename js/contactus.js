@@ -27,6 +27,6 @@ function showPhone(params) {
 }
 
 function contactus(params) {
-  alert('Application submitted')
+  alert('Our Agent will get back to you shortly')
   contact - form.reset()
 }
