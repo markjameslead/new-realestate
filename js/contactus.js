@@ -27,6 +27,11 @@ function showPhone(params) {
 }
 
 function contactus(params) {
-  alert('Our Agent will get back to you shortly')
-  contact - form.reset()
+  var youremail = document.getElementById('your-email').value
+
+  if (youremail != '') {
+    alert('Our Agent will get back to you shortly')
+  } else {
+    alert('Please enter your name and email address')
+  }
 }
