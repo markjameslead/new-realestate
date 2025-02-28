@@ -36,13 +36,16 @@ function showSlides() {
 }*/
 
 function redirectToListings() {
-  let location = document.getElementById('location').value
-  let price = document.getElementById('price').value
-
-  // Redirect to listings.html with search parameters
-  window.location.href = `../html/listings.html?location=${encodeURIComponent(
-    location
-  )}&price=${encodeURIComponent(price)}`
+  var price = document.getElementById('price').value
+  var location = document.getElementById('location').value
+  if (price != '' || location != '') {
+    // Redirect to listings.html with search parameters
+    window.location.href = `../html/listings.html?location=${encodeURIComponent(
+      location
+    )}&price=${encodeURIComponent(price)}`
+  } else {
+    alert('Please enter your search parameters')
+  }
 }
 
 function contactUs() {
