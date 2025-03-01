@@ -155,7 +155,7 @@ h2 {
   flex-grow: 1;
 }
 .listing-title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: #005f73;
   text-decoration: none;
@@ -163,6 +163,7 @@ h2 {
 .listing-price {
   color: #d9534f;
   font-weight: bold;
+  font-size: 15px;
 }
 .listing-location {
   font-size: 14px;
