@@ -40,17 +40,77 @@
         <h2>Rental Application</h2>
         <h4>This document is <b>NOT</b> a lease or rental agreement.</h4>
         <form
-          action="https://formspree.io/f/xvgzjnan"
+          action="https://formspree.io/f/xqaerqdg"
           method="POST"
           enctype="multipart/form-data"
         >
           <label for="property-applyfor">Property Of Interest:</label>
-          <input
-            type="text"
-            id="property-applyfor"
-            name="property-applyfor"
-            required
-          />
+          <select name="property-applyfor" id="property-applyfor">
+            <option value="0">Please Select a specific property</option>
+            <option value="2125 Awihi Pl, Kihei, HI 96753">
+              2125 Awihi Pl, Kihei, HI 96753
+            </option>
+            <option value="40334 Hana Hwy, Hana, HI, 96713">
+              40334 Hana Hwy, Hana, HI, 96713
+            </option>
+            <option value="1763 Pee Rd, Koloa, HI 96756">
+              1763 Pee Rd, Koloa, HI 96756
+            </option>
+            <option value="1109 Pookela Rd, Makawao, HI, 96768">
+              1109 Pookela Rd, Makawao, HI, 96768
+            </option>
+            <option value="75-5865 Walua Rd, Kailua-Kona, HI 96740">
+              75-5865 Walua Rd, Kailua-Kona, HI 96740
+            </option>
+            <option value="53-567 Kamehameha Hwy, Hauula, HI 96717">
+              53-567 Kamehameha Hwy, Hauula, HI 96717
+            </option>
+            <option value="3300 Wailea Alanui Dr, Kihei, HI 96753">
+              3300 Wailea Alanui Dr, Kihei, HI 96753
+            </option>
+            <option value="46-160 Kiowai Street, Kaneohe, HI, 96744">
+              46-160 Kiowai Street, Kaneohe, HI, 96744
+            </option>
+            <option value="71C Country Club Road, Honolulu, HI 96817">
+              71C Country Club Road, Honolulu, HI 96817
+            </option>
+            <option value="73-1315 Kaiminani Dr, Kailua Kona, HI 96740">
+              73-1315 Kaiminani Dr, Kailua Kona, HI 96740
+            </option>
+            <option value="84-770 Kili Drive, Waianae, HI, 96792">
+              84-770 Kili Drive, Waianae, HI, 96792
+            </option>
+            <option value="1735 Dole Street, Honolulu, HI, 96822">
+              1735 Dole Street, Honolulu, HI, 96822
+            </option>
+            <option value="1911 Kalanianaole, Hilo, HI 96720">
+              1911 Kalanianaole, Hilo, HI 96720
+            </option>
+            <option value="68-615 Farrington Hwy, Waialua, HI 96791">
+              68-615 Farrington Hwy, Waialua, HI 96791
+            </option>
+            <option value="68-3840 Lua Kula St, Waikoloa, HI 96738">
+              68-3840 Lua Kula St, Waikoloa, HI 96738
+            </option>
+            <option value="94-1391 Polani St,Waipahu, HI 96797">
+              94-1391 Polani St,Waipahu, HI 96797
+            </option>
+            <option value="98-410 Koauka Loop, Aiea, HI 96701">
+              98-410 Koauka Loop, Aiea, HI 96701
+            </option>
+            <option value="55-044 Kamehameha Hwy, Laie, HI 96762">
+              55-044 Kamehameha Hwy, Laie, HI 96762
+            </option>
+            <option value="500 Lunalilo Home Road, Honolulu, HI, 96825">
+              500 Lunalilo Home Road, Honolulu, HI, 96825
+            </option>
+            <option value="988 Halekauwila St, Honolulu, HI, 96814">
+              988 Halekauwila St, Honolulu, HI, 96814
+            </option>
+            <option value="88-167 Aoao Ave,Captain Cook, HI 96704">
+              88-167 Aoao Ave,Captain Cook, HI 96704
+            </option>
+          </select>
 
           <label for="applicantName">Your Name:</label>
           <input type="text" id="applicantName" name="applicantName" required />
@@ -133,7 +193,9 @@
           <label for="notes">Additional Notes:</label>
           <textarea id="notes" name="notes"></textarea>
 
-          <button type="submit">Submit Application</button>
+          <button onclick="applicationForm()" type="submit">
+            Submit Application
+          </button>
         </form>
       </div>
     </div>

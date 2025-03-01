@@ -19,10 +19,10 @@ function displayNav() {
   }
 }
 
-applicationForm.addEventListener('submit', function (event) {
+/*applicationForm.addEventListener('submit', function (event) {
   alert('Application submitted!')
   applicationForm.reset()
-})
+})*/
 
 function contactUs() {
   window.open('../html/contactus.html')
