@@ -3,6 +3,10 @@ body {
   background-color: #f4f4f4;
   font-family: Verdana, sans-serif;
 }
+.logoimage {
+  width: 140px;
+  height: 140px;
+}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 600px) {
@@ -230,6 +234,7 @@ li {
   margin-left: -90%;
   border: none !important;
   z-index: 1000;
+  margin-top: -60px;
 }
 
 .logo:hover {

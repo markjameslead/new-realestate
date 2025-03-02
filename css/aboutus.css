@@ -11,6 +11,7 @@ body {
   nav {
     z-index: 1000;
   }
+
   a:link {
     text-decoration: none;
   }
@@ -231,6 +232,12 @@ li {
   margin-left: -90%;
   border: none !important;
   z-index: 1000;
+  margin-top: -55px;
+}
+
+.logoimage {
+  width: 135px;
+  height: 135px;
 }
 
 .logo:hover {
