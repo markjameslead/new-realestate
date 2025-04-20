@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="../css/contactus.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <nav>
+      <h1>Real Housings</h1>
+      <div onclick="displayNav()" class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <section class="navbar">
+      <ul class="navbar-links">
+        <li class="logo">
+          <a href="canada.html"
+            ><img class="logoimage" src="../images/logo.png" alt="logo"
+          /></a>
+        </li>
+        <li><a href="../html/canada.html">Home</a></li>
+        <li><a href="../html/canadalistings.html">Listings</a></li>
+        <li><a href="../html/canadaaboutus.html">About us</a></li>
+        <li><a href="../html/canadacontactus.html">Contact us</a></li>
+        <li><a href="../html/canadatestimonies.html">Testimonies</a></li>
+        <li><a href="../index.html">Select Country</a></li>
+
+        <li>
+          <i class="material-icons" onclick="showPhone()">chat</i>
+        </li>
+      </ul>
+    </section>
+
+    <div class="container">
+      <h1>Contact Us</h1>
+      <div class="contact-info">
+        <p>Email: realhousingsinc@gmail.com</p>
+        <p>Phone: 318 969 1058</p>
+        <p>
+          Address: 200 Granville Street, 19th Floor Vancouver, BC V6C 2R6,
+          Canada
+        </p>
+      </div>
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/mpwpwybq"
+        method="POST"
+      >
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input
+          id="your-email"
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button onclick="contactus()" type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="footer-cut">
+      <p>&copy; 2022 Real Housings | All Rights Reserved</p>
+    </div>
+
+    <script src="../js/canadacontactus.js"></script>
+  </body>
+</html>

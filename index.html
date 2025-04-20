@@ -6,125 +6,30 @@
     <title>Real Housings</title>
     <link rel="icon" type="image/x-icon" href="../images/logo.png" />
     <link rel="stylesheet" href="index.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-
-    <link
-      href="css/bootstrap.css"
-      rel="stylesheet"
-      type="text/css"
-      media="all"
-    />
   </head>
-
   <body>
-    <!--Header-->
+    <div class="container">
+      <h1>Select a Country</h1>
+      <button class="btn" onclick="displayCountry('usa')">USA</button>
+      <button class="btn" onclick="displayCountry('canada')">CANADA</button>
 
-    <!--navbar-->
-
-    <nav>
-      <h1>Real Housings</h1>
-      <div onclick="displayNav()" class="ham-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-    <section class="navbar">
-      <ul class="navbar-links">
-        <li class="logo">
-          <a href="index.html"
-            ><img class="logoimage" src="./images/logo.png" alt="logo"
-          /></a>
-        </li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="../html/listings.html">Listings</a></li>
-        <li><a href="../html/aboutus.html">About us</a></li>
-        <li><a href="../html/contactus.html">Contact us</a></li>
-        <li><a href="../html/testimonies.html">Testimonies</a></li>
-
-        <li>
-          <i class="material-icons" onclick="showPhone()">chat</i>
-        </li>
-      </ul>
-    </section>
-
-    <!-- banner -->
-
-    <!--Navbar collapse for small screens-->
-
-    <div class="slideshow-container">
-      <div class="mySlides fade">
-        <img src="../images/background.jpg" style="width: 100%" />
-        <div class="text">
-          <p>Find Your Perfect Rental in Paradise</p>
-        </div>
+      <div class="details" id="canada">
+        <h2>Canada</h2>
+        <p>
+          Canada is the second-largest country in the world by land area. It is
+          known for its natural beauty, diverse culture, and high standard of
+          living. Major cities include Toronto, Vancouver, and Montreal.
+        </p>
       </div>
 
-      <div class="mySlides fade">
-        <img src="../images/background2.jpg" style="width: 100%" />
-        <div class="text">Luxury & Affordable Homes for Rent in Hawaii</div>
+      <div class="details" id="usa">
+        <h2>United States of America</h2>
+        <p>
+          The USA is a large country in North America, known for its global
+          influence, technological innovation, and diverse landscapes. Major
+          cities include New York, Los Angeles, and Chicago.
+        </p>
       </div>
-
-      <div class="mySlides fade">
-        <img src="../images/background3.jpg" style="width: 100%" />
-        <div class="text">Enjoy the Hawaiian Lifestyle</div>
-      </div>
-    </div>
-    <br />
-
-    <div style="text-align: center">
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-
-    <div class="search-bar">
-      <input type="text" id="location" placeholder="Enter location" />
-      <input type="text" id="price" placeholder="Price Range" />
-      <button onclick="redirectToListings()">Search</button>
-    </div>
-
-    <div class="featured-listings" id="listings">
-      <div
-        class="listing"
-        style="
-          background-image: url(../images/kihei1/1.jpg);
-          background-size: cover;
-        "
-      >
-        <h3>Light Steps to Sandy Beach</h3>
-        <p>$2,500/month | 2 Bed | 1 Bath | Kihei, HI</p>
-      </div>
-      <div
-        class="listing"
-        style="
-          background-image: url(../images/koloa/1.jpg);
-          background-size: cover;
-        "
-      >
-        <h3>Ocean View First Floor</h3>
-        <p>$2,100/month | 1 Bed | 1 Bath | Koloa, HI</p>
-      </div>
-      <div
-        class="listing"
-        style="
-          background-image: url(../images/Hana1/4.jpg);
-          background-size: cover;
-        "
-      >
-        <h3>Hana Evergreen Cottage</h3>
-        <p>$3,800/month | 1 Bed | 1 Bath | Hana, HI</p>
-      </div>
-    </div>
-    <div class="cta" id="contact">
-      <h2>Get Expert Guidance on Your Next Home</h2>
-      <button onclick="contactUs()">Contact Us</button>
-    </div>
-    <div class="footer">
-      <p>&copy; 2022 Real Housings | All Rights Reserved</p>
     </div>
     <script src="index.js"></script>
   </body>

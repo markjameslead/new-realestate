@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+    <title>Reviews</title>
+    <link rel="stylesheet" href="../css/testimonies.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <nav>
+      <h1>Real Housings</h1>
+      <div onclick="displayNav()" class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <section class="navbar">
+      <ul class="navbar-links">
+        <li class="logo">
+          <a href="canada.html"
+            ><img class="logoimage" src="../images/logo.png" alt="logo"
+          /></a>
+        </li>
+        <li><a href="../html/canada.html">Home</a></li>
+        <li><a href="../html/canadalistings.html">Listings</a></li>
+        <li><a href="../html/canadaaboutus.html">About us</a></li>
+        <li><a href="../html/canadacontactus.html">Contact us</a></li>
+        <li><a href="../html/canadatestimonies.html">Testimonies</a></li>
+        <li><a href="../index.html">Select Country</a></li>
+
+        <li>
+          <i class="material-icons" onclick="showPhone()">chat</i>
+        </li>
+      </ul>
+    </section>
+
+    <div class="container">
+      <h1>Customer Reviews</h1>
+      <div id="reviews">
+        <div class="review">
+          <p><strong>Hussayn Jamiu.</strong></p>
+          <p>
+            "Real Housings Inc. was amazing to work with! They were incredibly
+            professional, reliable, and committed to helping me secure the
+            perfect accommodation in Canada.”"
+          </p>
+        </div>
+        <div class="review">
+          <p><strong>Olujimi Oke</strong></p>
+          <p>
+            "Their team is the best to contact for your lease or rental property
+            purposes. They took note of all my concerns and made sure I got what
+            I needed and according to my budget too as a new immigrant."
+          </p>
+        </div>
+        <div class="review">
+          <p><strong>Gbemisola Ishola</strong></p>
+          <p>
+            "I had a great experience working with Real Housings Inc. They
+            provided invaluable information about the area, liaised with the
+            landlord, and facilitated meetings to ensure everything went
+            smoothly. "
+          </p>
+        </div>
+        <div class="review">
+          <p><strong> Luka Mikh.</strong></p>
+          <p>
+            "The customer support did a great job. They resolved my issue in 24
+            hours which is admirable considering how much they have to deal with
+            every day"
+          </p>
+        </div>
+        <div class="review">
+          <p><strong>Faith Straub.</strong></p>
+          <p>
+            "They were able to help me get a refund for I checked the property
+            and it was slightly far from my school. They went out of their way
+            to accommodate me and refund my money"
+          </p>
+        </div>
+        <div class="review">
+          <p><strong>Sid Patel</strong></p>
+          <p>
+            "Very professional and fast service, they helped us find a good
+            tenant really quickly!"
+          </p>
+        </div>
+        <div class="review">
+          <p><strong>Estefanía Silva Ríos</strong></p>
+          <p>
+            "I was a tenant at 7 Mabelle Avenue. I had a great experience as a
+            tenant. They made our 4 years stay so much worth it"
+          </p>
+        </div>
+
+        <div class="review">
+          <p><strong>Daisy R..</strong></p>
+          <p>
+            "I was a bit scared sending funds when i hadn't seen the property as
+            i was to arrive at a later date, but he gave me assurance and i
+            reluctantly paid, and i bet you i didn't regret it. so yes you can
+            work with them, i sincerely hope they are able to maintain this
+            reputation they have cut out for themselves!"
+          </p>
+        </div>
+
+        <div class="review">
+          <p><strong>Sharon T.</strong></p>
+          <p>
+            "Excellent property management company. We rented a unit with them
+            for two years and they have been amazing property managers"
+          </p>
+        </div>
+      </div>
+      <div class="review-form">
+        <textarea
+          id="reviewText"
+          placeholder="Write your review here..."
+        ></textarea>
+        <button onclick="submitReview()">Submit Review</button>
+      </div>
+    </div>
+    <div class="contact-us" id="contact">
+      <h2>Get Expert Guidance on Your Next Home</h2>
+      <button onclick="contactUs()">Contact Us</button>
+    </div>
+
+    <div class="footer-cut">
+      <p>&copy; 2022 Real Housings | All Rights Reserved</p>
+    </div>
+
+    <script src="../js/canadatestimonies.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+    <title>Listing Details</title>
+    <link rel="stylesheet" href="../css/listing-details.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <nav>
+      <h1>Real Housings</h1>
+      <div onclick="displayNav()" class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <section class="navbar">
+      <ul class="navbar-links">
+        <li class="logo">
+          <a href="canada.html"
+            ><img class="logoimage" src="../images/logo.png" alt="logo"
+          /></a>
+        </li>
+        <li><a href="../html/canada.html">Home</a></li>
+        <li><a href="../html/canadalistings.html">Listings</a></li>
+        <li><a href="../html/canadaaboutus.html">About us</a></li>
+        <li><a href="../html/canadacontactus.html">Contact us</a></li>
+        <li><a href="../html/canadatestimonies.html">Testimonies</a></li>
+        <li><a href="../index.html">Select Country</a></li>
+
+        <li>
+          <i class="material-icons" onclick="showPhone()">chat</i>
+        </li>
+      </ul>
+    </section>
+    <div class="container">
+      <img id="mainImage" class="main-image" src="" alt="Listing Image" />
+      <h1 id="listingTitle"></h1>
+      <p><strong>Price:</strong> <span id="listingPrice"></span>/month</p>
+      <p><strong>Location:</strong> <span id="listingLocation"></span></p>
+      <p>
+        <strong>Availability:</strong> <span id="listingAvailability"></span>
+      </p>
+
+      <p id="listingDescription" class="details"></p>
+
+      <div class="gallery" id="imageGallery"></div>
+
+      <a href="canadaapply.html" class="apply-button">Apply Now</a>
+    </div>
+
+    <div class="contact-us" id="contact">
+      <h2>Get Expert Guidance on Your Next Home</h2>
+      <button onclick="contactUs()">Contact Us</button>
+    </div>
+
+    <div class="footer-cut">
+      <p>&copy; 2022 Real Housings | All Rights Reserved</p>
+    </div>
+    <script src="../js/listing-details.js"></script>
+  </body>
+</html>
