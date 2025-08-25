@@ -35,7 +35,7 @@ function showSlides() {
   })
 }*/
 
-function redirectToListings() {
+/*function redirectToListings() {
   var price = document.getElementById('price').value
   var location = document.getElementById('location').value
   if (price != '' || location != '') {
@@ -46,6 +46,19 @@ function redirectToListings() {
   } else {
     alert('Please enter your search parameters')
   }
+}*/
+
+function redirectToListings() {
+  const location = document.getElementById('location').value.trim()
+  const price = document.getElementById('price').value.trim()
+
+  // Build query string
+  const params = new URLSearchParams()
+  if (location) params.append('location', location)
+  if (price) params.append('price', price)
+
+  // Redirect to listings.html with parameters
+  window.location.href = 'listings.html?' + params.toString()
 }
 
 function contactUs() {

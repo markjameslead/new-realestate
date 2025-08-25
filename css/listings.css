@@ -316,3 +316,26 @@ li {
 * {
   box-sizing: border-box;
 }
+
+.search-bar {
+  text-align: center;
+  margin: 20px auto;
+}
+.search-bar input {
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+}
+.search-bar button {
+  padding: 10px 15px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.search-bar button:hover {
+  background: #0056b3;
+}

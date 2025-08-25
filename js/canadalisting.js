@@ -53,3 +53,51 @@ function filterListings() {
 
 // Run filtering when page loads
 window.onload = filterListings
+
+// Apply filters on this page based on search bar OR URL params
+function applyFilters() {
+  let locationInput = document
+    .getElementById('locationInput')
+    .value.toLowerCase()
+  let priceInput = document.getElementById('priceInput').value.toLowerCase()
+
+  filterListings(locationInput, priceInput)
+}
+
+function filterListings(locationInput, priceInput) {
+  let listings = document.querySelectorAll('.listing')
+
+  listings.forEach((listing) => {
+    let price = listing
+      .querySelector('.listing-price')
+      .textContent.toLowerCase()
+    let location = listing
+      .querySelector('.listing-location')
+      .textContent.toLowerCase()
+
+    let matchLocation = location.includes(locationInput) || locationInput === ''
+    let matchPrice = price.includes(priceInput) || priceInput === ''
+
+    if (matchLocation && matchPrice) {
+      listing.style.display = 'flex'
+    } else {
+      listing.style.display = 'none'
+    }
+  })
+}
+
+// Read URL params on page load
+window.onload = function () {
+  const params = new URLSearchParams(window.location.search)
+  const locationParam = params.get('location')
+    ? params.get('location').toLowerCase()
+    : ''
+  const priceParam = params.get('price')
+    ? params.get('price').toLowerCase()
+    : ''
+
+  document.getElementById('locationInput').value = locationParam
+  document.getElementById('priceInput').value = priceParam
+
+  filterListings(locationParam, priceParam)
+}
