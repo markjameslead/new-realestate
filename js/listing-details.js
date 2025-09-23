@@ -51,5 +51,5 @@ function displayNav() {
 }
 
 function showPhone(params) {
-  alert('+1 808 205 7166')
+  alert('+1 808 315 5177')
 }
